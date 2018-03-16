@@ -1,10 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<link rel="stylesheet" th:href="@{/style.css}">
 <head>
+    <script type="text/javascript" src="timer.js"></script>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Generator</title>
 </head>
-<body>
+<body onload="odliczanie();">
+<div id="container">
+    <div id="zegar"></div>
+    <h1>Lorem Ipsum Generator</h1>
+         <div id="content">
+             Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w.
+             przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym,
+             pozostając praktycznie niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających fragmenty
+             Lorem Ipsum, a ostatnio z zawierającym różne wersje Lorem Ipsum oprogramowaniem przeznaczonym do realizacji druków na komputerach osobistych,
+             jak Aldus PageMaker
+
+
+        <div id="buttons">
+            <form action="view">
+
+    <input type="number" >
+
+
+    <select>
+        <option value="sentences">Sentence</option>
+        <option value="paragraphs">Paragraphs</option>
+        <option value="words">Words</option>
+
+    </select>
+    <input type="submit" value="Generate">
+            </form>
+
+        </div>
+         </div>
+</div>
 
 </body>
 </html>

@@ -1,0 +1,47 @@
+body{
+    background-color: lightgray;
+
+
+}
+h1 {
+    color: #000000;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+#cointaner{
+    width: 500px;
+    height: 500px;
+
+
+}
+#zegar{
+    float:right;
+    margin: 30px;
+    font-size: 30px;
+    text-decoration-style: solid;
+
+
+
+}
+#content{
+
+    height: auto;
+    width: 500px;
+    margin-left: auto;
+    margin-right:auto;
+    background-color : white;
+    border: 2px solid red;
+    border-radius: 12px;
+    padding: 10px 10px 40px 10px;
+}
+#buttons{
+    display: flex;
+    justify-content: flex-end;
+    float:left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+
+}
