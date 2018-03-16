@@ -1,22 +1,22 @@
-function odliczanie()
+function count()
 	{
-		var dzisiaj = new Date();
+		var today = new Date();
 		
-		var dzien = dzisiaj.getDate();
-		var miesiac = dzisiaj.getMonth()+1;
-		var rok = dzisiaj.getFullYear();
+		var day = today.getDate();
+		var month = today.getMonth()+1;
+		var year = today.getFullYear();
 		
-		var godzina = dzisiaj.getHours();
-		if (godzina<10) godzina = "0"+godzina;
+		var hour = today.getHours();
+		if (hour<10) hour = "0"+hour;
 		
-		var minuta = dzisiaj.getMinutes();
-		if (minuta<10) minuta = "0"+minuta;
+		var minute = today.getMinutes();
+		if (minute<10) minute = "0"+minute;
 		
-		var sekunda = dzisiaj.getSeconds();
-		if (sekunda<10) sekunda = "0"+sekunda;
+		var second = today.getSeconds();
+		if (second<10) second = "0"+second;
 		
-		document.getElementById("zegar").innerHTML =
-			godzina+":"+minuta+":"+sekunda;
+		document.getElementById("clock").innerHTML =
+			hour+":"+minute+":"+second;
 		 
-		 setTimeout("odliczanie()",1000);
+		 setTimeout("count()",1000);
 	}
