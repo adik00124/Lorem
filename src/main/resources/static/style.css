@@ -11,6 +11,7 @@ h1 {
     text-align: center;
     font-size: 30px; !important;
 
+
 }
 #cointaner{
     width: 500px;
@@ -31,7 +32,7 @@ h1 {
 
 }
 #content{
-    margin-top: 100px;
+    margin-top: 20px;
     height: auto;
     width: 500px;
     margin-left: auto;
