@@ -1,10 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<link rel="stylesheet" th:href="@{/style.css}">
 <head>
+    <script type="text/javascript" src="timer.js"></script>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Generator</title>
 </head>
-<body>
+<body onload="odliczanie();">
+<div id="container">
+    <div id="zegar"></div>
+    <h1>Lorem Ipsum Generator</h1>
+         <div id="content">
+
+        <p th:if="${data}" th:text="${data}"></p>
+
+        <div id="buttons">
+            <form action="/form" method="post">
+
+    <input type="number" name="userNumber" required>
+
+
+    <select name="type">
+        <option value="sentences">Sentence</option>
+        <option value="paragraphs">Paragraphs</option>
+        <option value="words">Words</option>
+
+    </select>
+    <input type="submit" value="Generate">
+            </form>
+
+        </div>
+         </div>
+</div>
 
 </body>
 </html>
